@@ -4,22 +4,18 @@ import WhiskyController from './WhiskyController';
 import DistilleryController from './DistilleryController';
 import NavBar from '../NavBar';
 
-const MainController = () => {
-
+const MainContainer = () => {
   return(
-    <div>
       <Router>
         <React.Fragment>
-          <NavBar>
+          <NavBar />
             <Switch>
-              <Route path="/whiskys" component="{WhiskyController}"/>
-              <Route path="/distilleries" component="{DistilleryController}"/>
+              <Route path="/whiskys" component={WhiskyController}/>
+              <Route path="/distilleries" component={DistilleryController}/>
             </Switch>
-          </NavBar>
         </React.Fragment>
       </Router>
-    </div>
   )
 }
 
-export default MainController;
+export default MainContainer;

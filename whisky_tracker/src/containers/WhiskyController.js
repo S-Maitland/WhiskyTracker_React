@@ -15,8 +15,7 @@ class WhiskyController extends Component{
 
   componentDidMount(){
     const request = new Request();
-
-    request.get('/api/whiskies')
+    request.get("/api/whiskies")
     .then((data) => {
       this.setState({whiskys: data._embedded.whiskies});
     }
@@ -36,8 +35,8 @@ render(){
         <Switch>
           <Route exact path="/whiskys" render={() => <WhiskyList
             whiskys={this.state.whiskys} />} />
-            
-            <Route exact path="/whiskies/:id" render={(props) => {
+
+            <Route exact path="/whiskys/:id" render={(props) => {
               const id = props.match.params.id;
               const whisky = this.findWhiskyById(id);
               return <WhiskyDetail whisky={whisky} />

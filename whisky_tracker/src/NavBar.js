@@ -7,10 +7,10 @@ const NavBar = (props) => {
 
       <ul>
         <li className="navLink">
-          <a href="/whiskys">Whiskys</a>
+          <a href="/whiskys/">Whiskys</a>
         </li>
         <li className="navLink">
-          <a href="/distilleries">Distilleries</a>
+          <a href="/distilleries/">Distilleries</a>
         </li>
       </ul>
     </header>
