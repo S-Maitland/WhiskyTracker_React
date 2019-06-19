@@ -1,6 +1,8 @@
 import React from 'react';
-import {BrowserRoute as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import WhiskyController from './WhiskyController';
+import DistilleryController from './DistilleryController';
+import NavBar from '../NavBar';
 
 const MainController = () => {
 
