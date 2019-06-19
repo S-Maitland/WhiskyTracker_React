@@ -18,7 +18,7 @@ const WhiskyList = (props) => {
       </li>
     )
   })
-
+  
   return(
     <ul className="component-list">
       {allWhiskys}

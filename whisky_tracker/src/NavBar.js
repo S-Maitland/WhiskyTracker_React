@@ -12,6 +12,16 @@ const NavBar = (props) => {
         <li className="navLink">
           <a href="/distilleries/">Distilleries</a>
         </li>
+
+        <li>
+          <a href="/whiskys/new">New Whisky</a>
+        </li>
+
+        <li>  
+          <a href="/distilleries/new">New Distillery</a>
+        </li>
+
+
       </ul>
     </header>
 
