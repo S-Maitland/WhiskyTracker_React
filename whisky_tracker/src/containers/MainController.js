@@ -11,6 +11,7 @@ const MainController = () => {
           <NavBar>
             <Switch>
               <Route path="/whiskys" component="{WhiskyController}"/>
+              <Route path="/distilleries" component="{DistilleryController}"/>
             </Switch>
           </NavBar>
         </React.Fragment>
