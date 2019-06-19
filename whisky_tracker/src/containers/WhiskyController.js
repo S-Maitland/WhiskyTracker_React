@@ -34,8 +34,9 @@ render(){
     <Router>
       <React.Fragment>
         <Switch>
-          <Route exact path="/whiskies/" render={() => <WhiskyList
+          <Route exact path="/whiskys" render={() => <WhiskyList
             whiskys={this.state.whiskys} />} />
+            
             <Route exact path="/whiskies/:id" render={(props) => {
               const id = props.match.params.id;
               const whisky = this.findWhiskyById(id);
